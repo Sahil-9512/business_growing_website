@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Owner Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    #loginForm {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: calc(100% - 10px);
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="button"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 3px;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="button"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function login() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (username === 'admin1' && password === '1234') {
+        window.location.href = 'owner1.html';
+      } else if (username === 'admin2' && password === '5678') {
+        window.location.href = 'owner2.html';
+      } else {
+        alert('Invalid credentials. Please try again.');
+      }
+    }
+  </script>
+</head>
+<body>
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br>
+    <input type="button" value="Login" onclick="login()">
+  </form>
+</body>
+</html>

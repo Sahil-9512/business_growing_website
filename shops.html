@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shops</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .shops-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    .shop-card {
+      width: 200px;
+      margin: 10px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .shop-card a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      margin-top: 10px;
+    }
+
+    .shop-card a:hover {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+  <div class="shops-container">
+    <div class="shop-card">
+      <h3>Shop 1</h3>
+      <p>Address 1</p>
+      <a href="#">Link 1</a>
+    </div>
+    <div class="shop-card">
+      <h3>Shop 2</h3>
+      <p>Address 2</p>
+      <a href="#">Link 2</a>
+    </div>
+    <!-- Add more shop cards as needed -->
+  </div>
+</body>
+</html>

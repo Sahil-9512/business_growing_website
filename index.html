@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-top: 50px;
+      font-size: 36px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    p {
+      text-align: center;
+      color: #666;
+      font-size: 18px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    li {
+      margin-bottom: 20px;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    li a {
+      text-decoration: none;
+      color: #3498db;
+      font-size: 20px;
+      padding: 10px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    
+    li a:hover {
+      color: #fff;
+      background-color: #3498db;
+      transform: translateY(-3px);
+    }
+    
+    li a:active {
+      transform: translateY(1px);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Main Page</h1>
+  
+  <p>Choose an option:</p>
+  
+  <ul>
+    <li><a href="registration.html">Register as an Owner</a></li>
+    <li><a href="shops.html">See the List of Shops</a></li>
+    <li><a href="ownerlogin.html">Login for Owner</a></li>
+    <!-- Add other options with their respective href links -->
+  </ul>
+  
+  <script src="script.js"></script>
+</body>
+</html>
